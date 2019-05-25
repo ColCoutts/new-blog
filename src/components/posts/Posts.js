@@ -8,7 +8,7 @@ function Posts({ posts }) {
       <Post post={post} />
     </li>
   ));
-  
+
   return (
     <ul>
       {postList}
@@ -19,3 +19,5 @@ function Posts({ posts }) {
 Posts.propTypes = {
   posts: PropTypes.array.isRequired
 };
+
+export default Posts;

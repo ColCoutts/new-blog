@@ -1,7 +1,8 @@
 import React from 'react';
+import PostForm from './posts/PostForm';
 
 export default function App(){
   return (
-    <h1>hihihihihi</h1>
+    <PostForm onSubmit={() => ({ title: 'hello', body: 'body' })} />
   );
 }
