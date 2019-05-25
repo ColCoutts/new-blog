@@ -1,8 +1,11 @@
 import React from 'react';
-import PostForm from './posts/PostForm';
+import CreatePost from '../containers/posts/CreatePost';
+
 
 export default function App(){
   return (
-    <PostForm onSubmit={() => ({ title: 'hello', body: 'body' })} />
+    <>
+    <CreatePost />
+    </>
   );
 }

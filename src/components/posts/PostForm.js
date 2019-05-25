@@ -16,7 +16,6 @@ export default class PostForm extends PureComponent {
 
     const { title, body } = this.state;
     this.props.onSubmit(title, body);
-    console.log(this.props.onSubmit());
     this.setState({ title: '', body: '' });
   }
 
