@@ -2,10 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function PostDetail({ post }) {
+  const paras = post.body.split('\n').map((postBody, index) => (
+    <p key={index}>{postBody}</p>
+  ));
+  console.log('posts', paras);
   return (
     <section>
       <h1>{post.title}</h1>
-      <p>{post.body}</p>
+      {paras}
     </section>
   );
 }
@@ -16,3 +20,5 @@ PostDetail.propTypes = {
     body: PropTypes.string.isRequired
   }).isRequired
 };
+
+export default PostDetail;
