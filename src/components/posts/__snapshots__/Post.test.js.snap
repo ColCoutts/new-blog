@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`post snapshot test renders Post snapshot 1`] = `
+<section>
+  <Link
+    to="/posts/undefined"
+  >
+    hi
+  </Link>
+  <a
+    href="#"
+    onClick={[Function]}
+  >
+    ǂ
+  </a>
+</section>
+`;
