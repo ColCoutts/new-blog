@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`posts snapshot test renders Posts snapshot 1`] = `
+<ul>
+  <li
+    key="0"
+  >
+    <Post
+      deletePost={[Function]}
+      post={
+        Object {
+          "body": "test",
+          "title": "hi",
+        }
+      }
+    />
+  </li>
+  <li
+    key="1"
+  >
+    <Post
+      deletePost={[Function]}
+      post={
+        Object {
+          "body": "test2",
+          "title": "hi2",
+        }
+      }
+    />
+  </li>
+</ul>
+`;

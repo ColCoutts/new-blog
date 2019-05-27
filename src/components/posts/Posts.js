@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import Post from './Post';
 
 function Posts({ posts, deletePost }) {
-  const postList = posts.map(post => (
-    <li key={post.id}>
+  const postList = posts.map((post, id) => (
+    <li key={id}>
       <Post post={post} deletePost={deletePost} />
     </li>
   ));
