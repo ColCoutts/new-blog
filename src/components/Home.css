@@ -4,3 +4,10 @@
   align-items: center;
   background: orangered;
 }
+
+.display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aqua;
+}

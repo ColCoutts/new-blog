@@ -5,15 +5,17 @@ import styles from './Home.css';
 
 export default function Home() {
   return (
+  <>
     <section className={styles.home}>
       <section>
         <h1>Create a Post</h1>
         <CreatePost />
       </section>
-      <section>
+    </section>
+      <section className={styles.display}>
         <h3>posts</h3>
         <AllPosts />
       </section>
-    </section>
+  </>
   );
 }
