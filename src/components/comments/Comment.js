@@ -2,9 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Comment({ comment, deleteComment }) {
+  console.log('COMMENT', comment);
   return (
     <section>
-      <h2>{comment.userName}</h2>
+      <h2>{comment.title}</h2>
       <p>{comment.body}</p>
       <a href="#" onClick={deleteComment.bind(null, comment.id)}>&#x1c2;</a>
     </section>
@@ -14,7 +15,7 @@ function Comment({ comment, deleteComment }) {
 Comment.propTypes = {
   deleteComment: PropTypes.func.isRequired,
   comment: PropTypes.shape({
-    userName: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
     body: PropTypes.string.isRequired
   })
 };

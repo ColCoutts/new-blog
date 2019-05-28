@@ -20,3 +20,5 @@ Comments.propTypes = {
   deleteComment: PropTypes.func.isRequired,
   comments: PropTypes.array.isRequired
 };
+
+export default Comments;
